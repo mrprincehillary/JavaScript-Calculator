@@ -1,0 +1,63 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+
+.calculator {
+    border: 1px solid #8d0707;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(10, 1, 1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 550px; /* Fixed width */
+    border: 2px solid #d116d1;
+}
+
+#display {
+    width: 94%;
+    height: 80px; /* Increased height */
+    margin-bottom: 20px; /* Increased margin */
+    text-align: right;
+    font-size: 50px; /* Increased font size */
+    border: 2px solid #d116d1;
+    border-radius: 5px;
+    padding: 10px; /* Increased padding */
+    background-color: #f9f9f9;
+    color: #0f0202; /* Darker text color */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for numbers */
+    gap: 15px; /* Increased gap */
+}
+
+button {
+    padding: 15px; /* Increased padding */
+    font-size: 30px; /* Increased font size */
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    transition: background-color 0.3s, transform 0.1s; /* Added transform for pressed effect */
+}
+
+button:hover {
+    background-color: #576779; /* Darker on hover */
+}
+
+button:active {
+    background-color: #041120; /* Even darker when pressed */
+    transform: scale(0.95); /* Slightly shrink when pressed */
+}
+
+.equal {
+    grid-column: span 3; /* Make the equal button span across three columns */
+    background-color: #a31aaf; /* Different color for the equal button */
+    font-size: 24px; /* Larger font size for visibility */
+}
